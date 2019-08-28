@@ -19,7 +19,7 @@ public class Conexion {
     private final String host = "reservasriff.c6l8vdttvauj.us-east-2.rds.amazonaws.com";
     private final String port = "5431";
     private final String dbName = "reservasriff";
-    String jdbcUrl = host+":"+port+"/"+dbName+ "?user=" + userName + "&password=" + password;
+    String jdbcUrl = "jdbc:postgresql://"+host+":"+port+"/"+dbName+ "?user=" + userName + "&password=" + password;
 
     public Connection conectar() {
         try {
